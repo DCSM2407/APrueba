@@ -1,36 +1,41 @@
 <img src='./img/logo.png' background='white'>
 
-### Universidad de San Carlos de Guatemala, 06 Octubre 2023
+### Universidad de San Carlos de Guatemala, Agosto 2024
 ### Facultad de Ingeniería
 ### Escuela de Ciencias y Sistemas
 ### Seminario de Sistemas 1
 
 ---
-# Seminario 1 | Grupo #7 | Proyecto 1
+# Seminario 1 | Grupo #10 | Practica 1
 ---
 
 > Integrantes
-> - Deivid Alexander Lux Revolorio - 201549059
-> - Fernando José Jr. Serrano Mejia  -   201701039
-> - Herberth Abisai Avila Ruiz   -    201504464
+> - Arnaldo Patricio Paxtor García - 009516264
+> - Diego Ahtohil Noj Armira - 201220159
+> - Cristofher Antonio Saquilmer Rodas - 201700686
+> - Dilan Conaher Suy Miranda - 201801194
 
 ---
 # MANUAL DE USUARIO
 ---
 ## CONTENIDO
-* [Descripción](#descripción)
-* [Objetivos](#objetivos)
-    * [General](#general)
-    * [Específicos](#específicos) 
-* [Inicio de Sesión](#inicio-de-Sesión)
-* [Registro de Usuario](#registro-de-Usuario)
-* [Pantalla Principal del Usuario](#principal)
-* [Buscar Canciones, Álbumes y Playlists](#canciones-album-playlist)
-* [Crear o Modificar una Canción](#crear-Modificar-una-Canción)
-* [Explorar y Gestionar Álbumes](#albums)
-* [Crear y Editar Playlists](#playlist)
-* [Ver Canciones Favoritas](#favoritos)
-* [Gestionar Playlists](#gestionar-playlist)
+  [Seminario 1 | Grupo #10 | Practica 1](#seminario-1--grupo-10--practica-1)
+  
+- [Seminario 1 | Grupo #10 | Practica 1](#seminario-1--grupo-10--practica-1)
+- [MANUAL DE USUARIO](#manual-de-usuario)
+  - [CONTENIDO](#contenido)
+  - [Descripción](#descripción)
+  - [Objetivos](#objetivos)
+    - [General](#general)
+    - [Específicos](#específicos)
+  - [Inicio de Sesión](#inicio-de-sesión)
+  - [Registro de Usuario](#registro-de-usuario)
+  - [Pantalla Principal del Usuario](#pantalla-principal-del-usuario)
+  - [Buscar Canciones](#buscar-canciones)
+  - [Crear o Modificar una Canción](#crear-o-modificar-una-canción)
+  - [Crear y Editar Playlists](#crear-y-editar-playlists)
+  - [Ver Canciones Favoritas](#ver-canciones-favoritas)
+  - [Gestionar Playlists](#gestionar-playlists)
 <!-- toc! -->
 
 ---
@@ -62,8 +67,8 @@ Después de iniciar sesión, serás dirigido a tu pantalla principal. Aquí enco
 
 <img src='./img/semi1_inicio.png'>
 
-## Buscar Canciones, Álbumes y Playlists
-Utiliza la barra de búsqueda para encontrar canciones, álbumes o playlists específicas. Ingresa el nombre del artista, canción o álbum que estás buscando y haz clic en "Buscar". Los resultados se mostrarán a continuación.
+## Buscar Canciones 
+Utiliza la barra de búsqueda para encontrar canciones. Ingresa el nombre de la canción estás buscando y haz clic en "Buscar". Los resultados se mostrarán a continuación.
 
 <img src='./img/semi1_canciones.png'>
 
@@ -71,16 +76,6 @@ Utiliza la barra de búsqueda para encontrar canciones, álbumes o playlists esp
 Para crear una nueva canción o modificar una existente, utiliza el componente "Crear/Modificar Canción". Aquí puedes ingresar los detalles de la canción, como el título, artista, álbum y género.
 
 <img src='./img/semi1_crearcancion.png'>
-
-## Crear o Editar un Artista
-En el componente "Crear/Editar Artista", puedes añadir información sobre el artista, incluyendo su nombre, biografía y foto. Asegúrate de guardar los cambios después de editar.
-
-<img src='./img/semi1_crearartista.png'>
-
-## Explorar y Gestionar Álbumes
-Utiliza el componente "Explorar Álbumes" para ver una lista de todos los álbumes disponibles. Puedes crear un nuevo álbum, ver detalles y editar la lista de canciones que pertenecen a un álbum.
-
-<img src='./img/semi1_crearalbum.png'>
 
 ## Crear y Editar Playlists
 En el componente "Crear/Editar Playlist", puedes crear una nueva playlist, agregar canciones a una playlist existente y editar los detalles de la playlist, como su nombre y descripción.

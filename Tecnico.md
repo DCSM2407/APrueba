@@ -11,8 +11,10 @@
 
 > Integrantes
 > - Arnaldo Patricio Paxtor García - 009516264
+> - Diego Ahtohil Noj Armira - 201220159
 > - Cristofher Antonio Saquilmer Rodas - 201700686
 > - Dilan Conaher Suy Miranda - 201801194
+
 
 
 ---
