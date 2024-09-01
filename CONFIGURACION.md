@@ -10,9 +10,10 @@
 ---
 
 > Integrantes
+> - Arnaldo Patricio Paxtor García - 009516264
+> - Cristofher Antonio Saquilmer Rodas - 201700686
 > - Dilan Conaher Suy Miranda - 201801194
-> - Fernando José Jr. Serrano Mejia  -   201701039
-> - Herberth Abisai Avila Ruiz   -    201504464
+
 
 ---
 # MANUAL DE CONFIGURACIÓN
@@ -22,15 +23,15 @@
 * [Objetivos](#objetivos)
     * [General](#general)
     * [Específicos](#específicos) 
-* [Arquitectura de la Aplicación Web con React, Load Balancer, EC2, S3 y MySQL](#explicacion-arquitectura)
-* [MODELO ENTIDAD RELACION](#modelo-entidad-relacion)
-* [CONFIGURACION DE ARRANQUE PARA LOS SERVIDORES](#configuracion-arranque)
-* [USUARIO IAM](#usuario-iam)
+* [Arquitectura de la Aplicación](#explicacion-arquitectura)
+* [Modelo Entidad Relacion](#modelo-entidad-relacion)
+* [Configuración de Arranque para los Serviodores](#configuracion-arranque)
+* [Usuarios IAM](#usuario-iam)
   * [Asociar Políticas](#asociar-políticas)
-* [Configuración de Servicio EC2 (Ubuntu 22.04, t2.micro)](#configuracion-ec2)
+* [Configuración de Servicio EC2](#configuracion-ec2)
 * [Configuración de Servicio S3](#configuracion-s3)
 * [Configuración de Servicio Load Balancer](#configuracion-load-balancer)
-* [CONCLUSIONES](#conclusiones)
+* [Conclusiones](#conclusiones)
 <!-- toc! -->
 
 ---
@@ -58,7 +59,7 @@ Los servicios de AWS que se utilizaran para este proyecto son:
 Para realizar éste proyecto se deberá cumplir con los siguientes requerimientos:
 
 #### Marco de trabajo
-`El proyecto se desarrollo con el editor de texto Visual Studio Code en su version: 1.83.0, los lenguajes a utilizar fueron Python en su version: 3.11.5, Pip version: 23.2.1, Nodejs version: 18.18.0, npm version: 9.8.1. El framework utilizado fue React.`
+`El proyecto se desarrollo con el editor de texto Visual Studio Code en su version: 1.92.|, los lenguajes a utilizar fueron Python en su version: 3.12.5, Pip version: 23.2.1, Nodejs version: 20.17.0, npm version: 10.8.2. El framework utilizado fue React.`
 #### Servicios en AWS
 ` Se utilizaron 2 instancias EC2 en AWS para el despliegue de los 2 servidores (Python y Nodejs). Un servicio S3 para el almacenamiento de imagenes, mp3 y el lanzamiento estatico de la aplicacion de React. Un servicio Load Balancer.`
 
@@ -116,15 +117,15 @@ Modelo entidad relacion propuesto para almacenar los datos.
 Para el servidor en Python se crea un entorno virtual para almacenar todas las dependencias que este requiere para funcionar. La manera para levantar el servidor es el siguiente:
 
     ´´´bash
-    ubuntu@ip:~/Semi1-Grupo7-Proyecto1/backend_python$ source myenv/bin/activate
+    ubuntu@ip:~/Semi1-Grupo10-Practica1/backend_python$ source myenv/bin/activate
 
-    (myenv) ubuntu@ip:~/Semi1-Grupo7-Proyecto1/backend_python/src$ python app.py
+    (myenv) ubuntu@ip:~/Semi1-Grupo10-Practica1/backend_python/src$ python app.py
 
 #### Servidor Nodejs
 Para el servidor en Nodejs se levanta desde la carpeta dist, de la siguiente manera:
 
     ´´´bash
-    ubuntu@ip:~/Semi1-Grupo7-Proyecto1/backend_node$ node ./dist/index.js
+    ubuntu@ip:~/Semi1-Grupo10-Practica1/backend_node$ node ./dist/index.js
 
 ### USUARIO IAM
 Primero, inicia sesión en tu consola de AWS y sigue estos pasos para crear un nuevo usuario de IAM:
@@ -220,7 +221,7 @@ Después de crear el usuario de IAM y asignarle las políticas adecuadas, recibi
 * Asocia una clave SSH para acceder a la instancia.
 * Conéctate a la instancia:
 
-<img src='./img/semi1_instancias.png'>
+<img src='./img/semi1_instancias.jpg'>
 
 #### Abre una terminal en tu máquina local
 Utiliza el comando:
@@ -249,6 +250,8 @@ Para conectarte a tu instancia EC2.
 * Haz clic en tu bucket.
 * Haz clic en "Upload" para subir los archivos del frontend (por ejemplo, los archivos de React build) al bucket.
 
+<img src='./img/buckets.jpg'>
+
 ### Configuración de Servicio Load Balancer
 #### Crear un Application Load Balancer
 
@@ -263,7 +266,7 @@ Para conectarte a tu instancia EC2.
 * Configura los grupos de destino para el Load Balancer, asociando las instancias EC2 que deseas balancear.
 * Puedes configurar health checks para asegurarte de que las instancias estén funcionando correctamente.
 
-<img src='./img/semi1_loadbalancer.png'>
+<img src='./img/semi1_loadbalancer.jpg'>
 
 #### Asociar el Load Balancer con el Bucket de S3 (Opcional)
 
@@ -271,7 +274,7 @@ Para conectarte a tu instancia EC2.
 
 ---
 
-### CONCLUSIONES
+### Conclusiones
 Implementar una arquitectura en la nube utilizando servicios como Amazon EC2 para servidores Python y Node.js junto con Amazon S3 para alojar el frontend estático ofrece una serie de ventajas clave:
 
 #### Escalabilidad y Flexibilidad
