@@ -10,7 +10,7 @@
 ---
 
 > Integrantes
-> - Deivid Alexander Lux Revolorio - 201549059
+> - Dilan Conaher Suy Miranda - 201801194
 > - Fernando José Jr. Serrano Mejia  -   201701039
 > - Herberth Abisai Avila Ruiz   -    201504464
 
