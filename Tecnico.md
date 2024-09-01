@@ -6,7 +6,7 @@
 ### Seminario de Sistemas 1
 
 ---
-# Seminario 1 | Grupo #7 | Proyecto 1
+# Seminario 1 | Grupo #10 | Practica 1
 ---
 
 > Integrantes
