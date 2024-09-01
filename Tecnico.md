@@ -1,6 +1,6 @@
 <img src='./img/logo.png' background='white'>
 
-### Universidad de San Carlos de Guatemala, 06 Octubre 2023
+### Universidad de San Carlos de Guatemala, Agosto 2024
 ### Facultad de Ingeniería
 ### Escuela de Ciencias y Sistemas
 ### Seminario de Sistemas 1
